@@ -12,6 +12,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/vault" element={<Vault />} />
+        <Route path="/olq" element={<OLQ />} />
       </Routes>
     </Router>
   );
