@@ -3,6 +3,9 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Dashboard from './components/Dashboard';
 import Vault from './components/Vault';
+import FitBot from './components/FitBot';
+
+
 
 function App() {
   return (
@@ -13,6 +16,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/vault" element={<Vault />} />
         <Route path="/olq" element={<OLQ />} />
+        <Route path="/fitbot" element={<FitBot />} />
       </Routes>
     </Router>
   );
