@@ -4,6 +4,8 @@ import Signup from './components/Signup';
 import Dashboard from './components/Dashboard';
 import Vault from './components/Vault';
 import FitBot from './components/FitBot';
+import ProtectedRoute from './components/ProtectedRoute';
+
 
 
 
@@ -13,11 +15,50 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/vault" element={<Vault />} />
-        <Route path="/olq" element={<OLQ />} />
-        <Route path="/fitbot" element={<FitBot />} />
-        <Route path="/planner" element={<Planner />} />
+       <Route
+  path="/dashboard"
+  element={
+    <ProtectedRoute>
+      <Dashboard />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/vault"
+  element={
+    <ProtectedRoute>
+      <Vault />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/planner"
+  element={
+    <ProtectedRoute>
+      <Planner />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/fitbot"
+  element={
+    <ProtectedRoute>
+      <FitBot />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/olq"
+  element={
+    <ProtectedRoute>
+      <OLQ />
+    </ProtectedRoute>
+  }
+/>
       </Routes>
     </Router>
   );
