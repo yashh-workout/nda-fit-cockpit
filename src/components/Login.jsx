@@ -42,6 +42,15 @@ function Login() {
     >
       Login
     </button>
+    <p className="mt-4 text-sm">
+  Already have an account?{" "}
+  <a
+    href="/"
+    className="text-blue-400 hover:text-blue-300 underline"
+  >
+    Log in here
+  </a>
+</p>
     {error && <p className="mt-4 text-red-500">{error}</p>}
   </div>
 );
