@@ -17,6 +17,7 @@ function App() {
         <Route path="/vault" element={<Vault />} />
         <Route path="/olq" element={<OLQ />} />
         <Route path="/fitbot" element={<FitBot />} />
+        <Route path="/planner" element={<Planner />} />
       </Routes>
     </Router>
   );
