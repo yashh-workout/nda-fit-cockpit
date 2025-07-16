@@ -13,6 +13,23 @@ function Dashboard() {
           <p className="text-green-400">🔥 Login Successful</p>
         </div>
       </div>
+      <div className="bg-gray-800 p-6 rounded-lg mt-6 w-full max-w-3xl shadow-xl border border-purple-600">
+  <h2 className="text-2xl font-bold text-green-400 mb-4">Site Actions 🧠⚙️</h2>
+  <div className="grid grid-cols-2 gap-4">
+    <a href="/vault" className="bg-indigo-600 hover:bg-indigo-700 px-4 py-3 rounded text-white text-center shadow">
+      🧮 Open Formula Vault
+    </a>
+    <a href="/planner" className="bg-green-600 hover:bg-green-700 px-4 py-3 rounded text-white text-center shadow">
+      📅 NDA Planner
+    </a>
+    <a href="/fitbot" className="bg-blue-600 hover:bg-blue-700 px-4 py-3 rounded text-white text-center shadow">
+      🤖 FitBot Assistant
+    </a>
+    <a href="/olq" className="bg-yellow-600 hover:bg-yellow-700 px-4 py-3 rounded text-white text-center shadow">
+      📊 OLQ Tracker
+    </a>
+  </div>
+</div>
     </div>
   );
 }
