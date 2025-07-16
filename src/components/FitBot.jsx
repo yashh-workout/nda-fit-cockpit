@@ -19,9 +19,9 @@ function FitBot() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6 bg-green-700 px-6 py-3 rounded-xl shadow-md">
-        FitBot AI Assistant 🤖🔥
-      </h1>
+     <h1 className="text-4xl font-bold mb-6 pulse-heading bg-green-700 px-6 py-3 rounded-xl shadow-md">
+  FitBot AI Assistant 🤖🔥
+</h1>
 
       <div className="w-full max-w-2xl bg-gray-800 p-6 rounded-lg shadow-lg mb-4">
         <div className="h-64 overflow-y-scroll bg-gray-700 p-4 rounded mb-4 border border-green-400">
