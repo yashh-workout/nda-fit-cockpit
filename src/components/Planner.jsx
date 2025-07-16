@@ -52,6 +52,16 @@ function Planner() {
             ? '✅ All topics completed!'
             : `✅ ${completed.length}/${topics.length} done — keep pushing!`}
         </div>
+        {/* 📊 Progress Bar */}
+<div className="w-full h-4 mt-2 bg-gray-700 rounded overflow-hidden">
+  <div
+    className="h-full bg-gradient-to-r from-green-500 to-indigo-500"
+    style={{
+      width: `${(completed.length / topics.length) * 100}%`,
+      transition: 'width 0.4s ease',
+    }}
+  />
+</div>
       </div>
     </div>
   );
