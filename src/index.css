@@ -4,3 +4,45 @@ body {
   background-color: #0a0a0a;
   color: #ffffff;
 }
+/* 🎯 Smooth transitions on hover */
+a, button, input, textarea {
+  transition: all 0.3s ease;
+}
+
+/* ✨ Glowing button hover effect */
+.glow:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+              0 0 20px rgba(173, 216, 230, 0.3),
+              0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+/* 🌠 Pulse animation for headings */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #00ffff;
+  }
+  50% {
+    transform: scale(1.02);
+    text-shadow: 0 0 10px #00ffff;
+  }
+}
+
+.pulse-heading {
+  animation: pulse 2s infinite;
+}
+
+/* 👇 Scrollbar styling (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+::-webkit-scrollbar-thumb {
+  background: #4B5563;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6B7280;
+}
