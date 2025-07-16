@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 function FitBot() {
+  const [query, setQuery] = useState('');
+const [reply, setReply] = useState('');
   const [input, setInput] = useState('');
   const [conversation, setConversation] = useState([]);
 
