@@ -1,3 +1,4 @@
+import FadeWrapper from './FadeWrapper';
 import { useState, useEffect } from 'react';
 import { db } from '../firebase';
 import { collection, addDoc, getDocs } from 'firebase/firestore';
@@ -43,10 +44,12 @@ function Vault() {
   }, []);
 
   return (
+    <FadeWrapper>
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center px-4 py-8">
       <h1 className="text-4xl font-bold mb-6 bg-purple-700 px-6 py-3 rounded-xl shadow-md">
         NDA Formula Vault 📚
       </h1>
+    
 
       <div className="w-full max-w-2xl bg-gray-800 p-6 rounded-lg shadow-lg">
         <input
@@ -90,6 +93,7 @@ function Vault() {
         )}
       </div>
     </div>
+      </Fadewrapper>
   );
 }
 
